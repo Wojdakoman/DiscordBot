@@ -6,7 +6,8 @@
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "test": "ng test",
+    "build:flask": "ng build --deploy-url front/ && move .\\dist\\index.html ..\\FlaskServer\\templates\\ && move .\\dist\\* ..\\FlaskServer\\front\\"
   },
   "private": true,
   "dependencies": {
